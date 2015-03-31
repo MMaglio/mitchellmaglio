@@ -1,10 +1,21 @@
+
+a {
+	color: #c1c1c1;
+
+	/*&:hover {
+		color:#7F8785;
+		border-bottom: 4px solid rgba(236,235,222,.5);
+	}*/
+}
+
 #sidebar {
 	position: fixed;
 	left: 0;
 	top: 0;
 	bottom: 0;
-	width: 310px;
+	width: 220px;
 	padding: 60px 30px 60px 60px;
+	font-family:'Open Sans', sans-serif;
 }
 
 #intro {
@@ -18,19 +29,24 @@
 	line-height: 1.4em;
 	color: #c1c1c1;
 	letter-spacing: 2px;
+	font-family: 'Open Sans', sans-serif;
+
 }
 
 .sidebar-header{
 	color: #2f3231;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
 }
 
 #sidebar hr {
 	width: 100px;
 	margin: 30px 0;
+	color: #ecebde;
 }
 
 #wrapper {
-	padding-left: 310px;
+	padding-left: 220px;
 	padding-right: 30px;
 	margin-top: 120px;
 	font-size: 10px;
@@ -40,11 +56,14 @@
 
 .sidebar-nav {
 	padding: 0;
-	font-size: 10px;
 	padding-top: 20px;
+	font-size: 10px;
 	list-style: none;
 	line-height: 2.4em;
 	letter-spacing: 2px;
+	color: #c1c1c1;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
 }
 
 
@@ -60,11 +79,42 @@
 	border-radius: 4px;
 	padding-top: 100%;
 	position: relative;
+	height: 490px;
+	width: 490px;
 }
 
 .stack-item:hover .bottom-drawer {
 	opacity: 1;
+	background-color: #fff;
+	color: #c1c1c1;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
 }
+
+.item-1 {
+/*	background: url(images/Facebook.jpg) no-repeat center center;*/
+}
+
+.item-2 {
+/*	background: url(images/Profit.jpg) no-repeat center center;*/
+}
+
+.item-3 {
+/*	background: url(images/Brandtale.jpg);*/
+}
+
+.item-4 {
+/*	background: url(images/TheThread.jpg);*/
+}
+
+.item-5 {
+/*	background: url(images/Supercompressor.jpg);*/
+}
+
+.item-6{
+/*	background: url(images/Thrillist.jpg);*/
+}
+
 
 .bottom-drawer {
 	opacity: 0;
