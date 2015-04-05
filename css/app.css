@@ -218,6 +218,57 @@ a:hover {
 	display: block;
 	height: 20px;
 	line-height: 0;
+	position: relative;
+}
+
+.sidebar-menu-btn.collapsed::before,
+.sidebar-menu-btn.collapsed::after {
+	content: none;
+	position: absolute;
+}
+
+.sidebar-menu-btn:hover.collapsed::after {
+	bottom: -3px;
+	border-top: 1px solid #c1c1c1;
+	left: 0;
+	right: 4px;
+	content: ' ';
+	z-index: -1;
+	transform: none;
+}
+
+.sidebar-menu-btn:hover.collapsed::before {
+	top: 2px;
+	height: 11px;
+	border-top: 1px solid #c1c1c1;
+	border-bottom: 1px solid #c1c1c1;
+	left: 0;
+	right: 4px;
+	content: ' ';
+	z-index: -1;
+	transform: none;
+}
+
+.sidebar-menu-btn::before {
+	position: absolute;
+	top: 12px;
+	border-top: 1px solid #c1c1c1;
+	left: -4px;
+	right: 0px;
+	content: ' ';
+	z-index: -1;
+	transform: rotate(45deg);
+}
+
+.sidebar-menu-btn::after {
+	position: absolute;
+	bottom: 7px;
+	border-top: 1px solid #c1c1c1;
+	left: -4px;
+	right: 0px;
+	content: ' ';
+	z-index: -1;
+	transform: rotate(135deg);
 }
 
 .sidebar-menu-btn.collapsed .icon-dot{
