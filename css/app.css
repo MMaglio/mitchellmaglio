@@ -3,11 +3,31 @@ a {
 	color: #c1c1c1;
 }
 
+a:focus,
+a:active {
+	color: inherit;
+	text-decoration: none;
+}
 
-	/*a:hover {
-		color:#7F8785;
-		border-bottom: 4px solid rgba(236,235,222,.5);
-	}*/
+a:hover {
+	color: #7F8785;
+	text-decoration: none;
+	line-height: 0;
+}
+
+.hover-link {
+	position: relative;
+}
+
+.hover-link:hover::before {
+	position: absolute;
+	bottom: -2px;
+	border-bottom: 8px solid #ecebde;
+	content: ' ';
+	left: -5px;
+	right: -5px;
+	z-index: -1;
+}
 
 #sidebar {
 	position: fixed;
@@ -170,7 +190,7 @@ a {
 }
 
 .item-1 {
-	background-image: url(images/Profit.jpg);
+	background-image: url(images/Facebook.jpg);
 }
 
 .item-2 {
@@ -191,6 +211,46 @@ a {
 
 .item-6{
 	background-image: url(images/Thrillist.jpg);
+}
+
+.sidebar-menu-btn {
+	width: 30px;
+	display: block;
+	height: 20px;
+	line-height: 0;
+}
+
+.sidebar-menu-btn.collapsed .icon-dot{
+	background-image: url(images/unfilled-dot.svg);
+}
+
+.sidebar-menu-btn:hover.collapsed .icon-dot {
+	background-image: url(images/filled-dot.svg);
+}
+
+.sidebar-menu-btn .dot-1,
+.sidebar-menu-btn .dot-3,
+.sidebar-menu-btn .dot-5,
+.sidebar-menu-btn .dot-7,
+.sidebar-menu-btn .dot-9 {
+	background-image: url(images/filled-dot.svg);
+}
+
+.sidebar-menu-btn:focus,
+.sidebar-menu-btn:hover {
+	text-decoration: none;
+	border: none;
+}
+
+.icon-dot {
+	background-image: url(images/unfilled-dot.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	display: inline-block;
+	height: 5px;
+	width: 5px;
+	margin-right: 2px;
+	margin-bottom: 5px;
 }
 
 
