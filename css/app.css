@@ -13,6 +13,7 @@ a:hover {
 	color: #7F8785;
 	text-decoration: none;
 	line-height: 0;
+	transition: 0.5s linear;
 }
 
 .hover-link {
@@ -410,6 +411,31 @@ footer {
 	}
 }
 
+
+@media only screen and (max-width: 767px) {
+
+	.stack-item {
+		height:550px;
+	}
+
+	.bottom-drawer {
+		bottom:180px;
+	}
+
+	.sidebar-nav {
+		text-align: center;
+		line-height: 6.0em;
+		font-size: 20px;
+		font-family: 'Open Sans';
+		font-weight: 600;
+
+		}
+	}
+}
+
+
+
+}
 
 
 
