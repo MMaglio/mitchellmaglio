@@ -120,12 +120,15 @@ a:hover {
 	height: 281px;
 }
 
+.stack-item .stack-img {
+	-webkit-animation: unAnimatedBackground .5s ease 1;
+	-moz-animation: unAnimatedBackground .5s ease 1;
+	animation: unAnimatedBackground .5s ease 1;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+
 .stack-item:hover .stack-img {
-/*	-webkit-transform: scale(0.7, 0.7);
-	-moz-transform: scale(0.7, 0.7);
-	-ms-transform: scale(0.7, 0.7);
-	-o-transform: scale(0.7, 0.7);
-	transform: scale(0.7, 0.7)*/
 	-webkit-animation: animatedBackground .5s ease 1;
 	-moz-animation: animatedBackground .5s ease 1;
 	animation: animatedBackground .5s ease 1;
@@ -153,6 +156,26 @@ a:hover {
 
  }
 
+ @-webkit-keyframes unAnimatedBackground {
+     0% {
+     	transform: translateY(281px);
+     	-webkit-transform: scale(0.7, 0.7) translateY(-141px);
+ 	    -moz-transform: scale(0.7, 0.7) translateY(-141px);
+ 	    -ms-transform: scale(0.7, 0.7) translateY(-141px);
+ 	    -o-transform: scale(0.7, 0.7) translateY(-141px);
+ 	    transform: scale(0.7, 0.7) translateY(-141px);
+
+     100% {
+     	    -webkit-transform: scale(1, 1);
+     	    -moz-transform: scale(1, 1);
+     	    -ms-transform: scale(1, 1);
+     	    -o-transform: scale(1, 1);
+     	    transform: scale(1, 1);
+     	}
+     }
+
+  }
+
 @-moz-keyframes animatedBackground {
     0% {
         -webkit-transform: scale(1, 1);
@@ -171,6 +194,26 @@ a:hover {
     }
 
 }
+
+@-moz-keyframes unAnimatedBackground {
+    0% {
+    	transform: translateY(281px);
+    	-webkit-transform: scale(0.7, 0.7) translateY(-141px);
+	    -moz-transform: scale(0.7, 0.7) translateY(-141px);
+	    -ms-transform: scale(0.7, 0.7) translateY(-141px);
+	    -o-transform: scale(0.7, 0.7) translateY(-141px);
+	    transform: scale(0.7, 0.7) translateY(-141px);
+
+    100% {
+    	    -webkit-transform: scale(1, 1);
+    	    -moz-transform: scale(1, 1);
+    	    -ms-transform: scale(1, 1);
+    	    -o-transform: scale(1, 1);
+    	    transform: scale(1, 1);
+    	}
+    }
+
+ }
  @keyframes animatedBackground {
     0% {
         -webkit-transform: scale(1, 1);
@@ -187,8 +230,29 @@ a:hover {
         -o-transform: scale(0.7, 0.7) translateY(-141px);
         transform: scale(0.7, 0.7) translateY(-141px);
     }
-
 }
+
+@keyframes unAnimatedBackground {
+    0% {
+    	transform: translateY(281px);
+    	-webkit-transform: scale(0.7, 0.7) translateY(-141px);
+	    -moz-transform: scale(0.7, 0.7) translateY(-141px);
+	    -ms-transform: scale(0.7, 0.7) translateY(-141px);
+	    -o-transform: scale(0.7, 0.7) translateY(-141px);
+	    transform: scale(0.7, 0.7) translateY(-141px);
+
+    100% {
+    	    -webkit-transform: scale(1, 1);
+    	    -moz-transform: scale(1, 1);
+    	    -ms-transform: scale(1, 1);
+    	    -o-transform: scale(1, 1);
+    	    transform: scale(1, 1);
+    	}
+    }
+
+ }
+
+
 
 .item-1 {
 	background-image: url(images/Facebook.jpg);
@@ -362,6 +426,17 @@ footer {
 
 @media only screen and (max-width: 767px) {
 
+	.stack-item:hover .stack-img,
+	.stack-item .stack-img {
+		-webkit-animation: none;
+		-moz-animation: none;
+		animation: none;
+	}
+
+	.stack-item:hover .bottom-drawer {
+		height: 0;
+	}
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -419,7 +494,7 @@ footer {
 	}
 
 	.bottom-drawer {
-		bottom:180px;
+		bottom: 180px;
 	}
 
 	.sidebar-nav {
