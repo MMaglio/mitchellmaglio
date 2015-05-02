@@ -121,17 +121,17 @@ a:hover {
 }
 
 .stack-item .stack-img {
-	-webkit-animation: unAnimatedBackground .5s ease 1;
-	-moz-animation: unAnimatedBackground .5s ease 1;
-	animation: unAnimatedBackground .5s ease 1;
+	-webkit-animation: unAnimatedBackground .3s ease .8;
+	-moz-animation: unAnimatedBackground .3s ease .8;
+	animation: unAnimatedBackground .3s ease .8;
 	-webkit-animation-fill-mode: forwards;
 	animation-fill-mode: forwards;
 }
 
 .stack-item:hover .stack-img {
-	-webkit-animation: animatedBackground .5s ease 1;
-	-moz-animation: animatedBackground .5s ease 1;
-	animation: animatedBackground .5s ease 1;
+	-webkit-animation: animatedBackground .3s ease .8;
+	-moz-animation: animatedBackground .3s ease .8;
+	animation: animatedBackground .3s ease .8;
 	-webkit-animation-fill-mode: forwards;
 	animation-fill-mode: forwards;
 }
@@ -423,6 +423,12 @@ footer {
 	color: #c1c1c1;
 }
 
+.footer-text {
+	text-transform: uppercase;
+	float: right;
+	margin-right: 60px;
+}
+
 
 @media only screen and (max-width: 767px) {
 
@@ -507,6 +513,9 @@ footer {
 		}
 	}
 }
+
+
+@media only screen and (max-width: 321px) {
 
 
 
