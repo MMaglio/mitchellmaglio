@@ -20,6 +20,10 @@ a:hover {
 	position: relative;
 }
 
+hr {
+		border-top: 1px solid #ECEBDE;
+}
+
 .hover-link:hover::before {
 	position: absolute;
 	bottom: -2px;
@@ -38,6 +42,7 @@ a:hover {
 	width: 220px;
 	padding: 60px 30px 60px 60px;
 	font-family:'Open Sans', sans-serif;
+	font-weight: 300;
 }
 
 #intro {
@@ -52,6 +57,7 @@ a:hover {
 	color: #c1c1c1;
 	letter-spacing: 2px;
 	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
 
 }
 
@@ -86,6 +92,7 @@ a:hover {
 	color: #c1c1c1;
 	font-family: 'Open Sans', sans-serif;
 	text-transform: uppercase;
+	font-weight: 300;
 }
 
 
@@ -101,6 +108,16 @@ a:hover {
 	border-radius: 4px;
 	position: relative;
 	overflow: hidden;
+	transition: .3s;
+}
+
+.stack-item:hover {
+	border: 1px solid #C1C2C1;
+	transition: .3s;
+
+	/*.bottom-drawer {
+		border-top: 1px solid #C1C2C1;
+	}*/
 }
 
 .stack-img {
@@ -118,6 +135,8 @@ a:hover {
 	color: #c1c1c1;
 	text-transform: uppercase;
 	height: 281px;
+	border-top: 1px solid #C1C2C1;
+	transition: .3s;
 }
 
 .stack-item .stack-img {
@@ -372,6 +391,7 @@ a:hover {
 
 .bottom-drawer {
 	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
 	background-color: #ffffff;
 	opacity: 1;
 	position: absolute;
@@ -427,6 +447,7 @@ footer {
 	text-transform: uppercase;
 	float: right;
 	margin-right: 60px;
+	font-size: 9px;
 }
 
 
@@ -514,12 +535,6 @@ footer {
 	}
 }
 
-
-@media only screen and (max-width: 321px) {
-
-
-
-}
 
 
 
