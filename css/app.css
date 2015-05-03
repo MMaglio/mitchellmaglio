@@ -131,7 +131,6 @@ hr {
 
 .stack-item:hover .bottom-drawer {
 	opacity: 1;
-	background-color: #fff;
 	color: #c1c1c1;
 	text-transform: uppercase;
 	height: 281px;
@@ -392,7 +391,6 @@ hr {
 .bottom-drawer {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
-	background-color: #ffffff;
 	opacity: 1;
 	position: absolute;
 	bottom: -61px;
@@ -409,12 +407,26 @@ hr {
 }
 
 .project-name {
+	position: relative;
+	display: inline;
 	color: #2f3231;
 	font-size: 10px;
 	line-height: 24px;
 	margin: 0;
 	letter-spacing: 2px;
+	background-color: transparent;
 }
+
+.project-name::before {
+	position: absolute;
+	bottom: -2px;
+	border-bottom: 8px solid #ecebde;
+	content: ' ';
+	left: -5px;
+	right: -5px;
+	z-index: -1;
+}
+
 
 .bottom-drawer hr {
 	width: 100px;
