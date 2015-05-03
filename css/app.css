@@ -302,7 +302,6 @@ hr {
 	height: 20px;
 	line-height: 0;
 	position: relative;
-	cursor: pointer;
 }
 
 .sidebar-menu-btn.collapsed::before,
@@ -356,11 +355,11 @@ hr {
 }
 
 .sidebar-menu-btn.collapsed .icon-dot{
-	background-image: url(images/unfilled-dot.svg);
+	background-color: transparent;
 }
 
 .sidebar-menu-btn:hover.collapsed .icon-dot {
-	background-image: url(images/filled-dot.svg);
+	background-color: #ecebde;
 }
 
 .sidebar-menu-btn .dot-1,
@@ -368,7 +367,7 @@ hr {
 .sidebar-menu-btn .dot-5,
 .sidebar-menu-btn .dot-7,
 .sidebar-menu-btn .dot-9 {
-	background-image: url(images/filled-dot.svg);
+	background-color: #ecebde;
 }
 
 .sidebar-menu-btn:focus,
@@ -378,14 +377,13 @@ hr {
 }
 
 .icon-dot {
-	background-image: url(images/unfilled-dot.svg);
-	background-repeat: no-repeat;
-	background-size: 100%;
 	display: inline-block;
 	height: 5px;
 	width: 5px;
 	margin-right: 2px;
 	margin-bottom: 5px;
+	border: 1px solid #babbba;
+	border-radius: 5px;
 }
 
 
