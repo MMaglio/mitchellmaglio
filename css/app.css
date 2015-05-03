@@ -374,6 +374,7 @@ hr {
 .sidebar-menu-btn:hover {
 	text-decoration: none;
 	border: none;
+	cursor: pointer;
 }
 
 .icon-dot {
