@@ -134,19 +134,21 @@
 	        animation: explode-4 .2s cubic-bezier(.87,-.41,.19,1.44) both;
 }
 
-html, body {
-  background-color: #ffffff;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
 h1 {
   font-family: 'Overpass Mono', monospace;
   font-weight: lighter;
   font-size: 16px;
   line-height: 24px;
   color: #000000;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Overpass Mono', monospace;
+  font-weight: lighter;
+  font-size: 12px;
+  line-height: 16px;
+  color: #999999;
   margin: 0;
 }
 
@@ -204,162 +206,88 @@ span.social a:link {color: #000000;}
 span.social a:visited {color: #000000;}
 span.social a:hover {color: #E4AD36;}
 
-.wrapper{
-  margin: 0 auto;
-  padding: 80px 0 0 0;
-  width: 840px;
+html {
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
 }
-.logo{
+
+body {
+  height: 100%;
+  padding: 0;
+  margin: 40px;
+}
+
+.header {
+  width: 100%
+}
+
+.logo {
   padding: 0;
   margin: 0;
   width: 116px;
 }
 .content{
   display: flex;
-  width: max-content;
-  padding: 40px 0 160px 0;
+  flex-direction: column;
+  width: auto;
+  padding: 0;
   margin: 0;
 }
 .name {
-  margin-right: 80px;
+  margin: 40px 0;
   padding: 0;
-  width: max-content;
+  width: auto;
   -webkit-animation: text-focus-in 1.5s 1s both;
   	      animation: text-focus-in 1.5s 1s both;
 }
 .text {
-  width: 600px;
+  width: auto;
   padding: 0;
   margin: 0;
   -webkit-animation: text-focus-in 1.5s 1.5s both;
   	      animation: text-focus-in 1.5s 1.5s both;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 999px) {
-  .wrapper{
-    margin: 0 auto;
-    padding: 80px 0 0 0;
-    width: 600px;
-  }
-  .logo{
-    padding: 0;
-    margin: 0;
-    width: 116px;
-  }
-  .content{
-    display: flex;
-    flex-direction: column;
-    width: max-content;
-    padding: 40px 0 160px 0;
-    margin: 0;
-  }
-  .name {
-    margin-bottom: 40px;
-    padding: 0;
-    width: max-content;
-    -webkit-animation: text-focus-in 1.5s 1s both;
-    	      animation: text-focus-in 1.5s 1s both;
-  }
-  .text {
-    width: 600px;
-    padding: 0;
-    margin: 0;
-    -webkit-animation: text-focus-in 1.5s 1.5s both;
-    	      animation: text-focus-in 1.5s 1.5s both;
-  }
-
-    span.fbBlue a:link {color: #4267B2;}
-    span.fbBlue a:visited {color: #4267B2;}
-
-    span.ocGray a:link {color: #8E8F90;}
-    span.ocGray a:visited {color: #8E8F90;}
-
-    span.medPink a:link {color: #FF2E92;}
-    span.medPink a:visited {color: #FF2E92;}
-
-    span.gifnBlue a:link {color: #4BAFE7;}
-    span.gifnBlue a:visited {color: #4BAFE7;}
-
-    span.brandGreen a:link {color: #00B0AA;}
-    span.brandGreen a:visited {color: #00B0AA;}
-
-    span.thrillRed a:link {color: #C30000;}
-    span.thrillRed a:visited {color: #C30000;}
-
-    span.jackOrange a:link {color: #EF3A23;}
-    span.jackOrange a:visited {color: #EF3A23;}
-
-    span.prplGreen a:link {color: #27F5C8;}
-    span.prplGreen a:visited {color: #27F5C8;}
-
-    span.groupBlue a:link {color: #00DFE4;}
-    span.groupBlue a:visited {color: #00DFE4;}
-
-    span.social a:link {color: #E4AD36;}
-    span.social a:visited {color: #E4AD36;}
+.footer {
+  width: 100%;
+  margin: 160px 0 0 0;
+  text-align: left;
+  -webkit-animation: text-focus-in 1.5s 2.0s both;
+  	      animation: text-focus-in 1.5s 2.0s both;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-  .wrapper{
-    padding: 40px 40px 160px 40px;
-    margin: 0;
-    width: auto;
+@media (min-width: 550px) {
+  body {
+    margin: 80px;
   }
-  .logo{
-    padding: 0;
-    margin: 0;
-    width: 116px;
-  }
-  .content{
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    padding: 0;
-    margin: 0;
-  }
-  .name {
-    margin-bottom: 40px;
-    margin-top: 40px;
-    padding: 0;
-    width: max-content;
-    -webkit-animation: text-focus-in 1.5s 1s both;
-    	      animation: text-focus-in 1.5s 1s both;
+}
+
+@media (min-width: 768px) {
+  body {
+    margin: 80px auto;
+    width: 600px;
   }
   .text {
-    width: auto;
-    margin: 0;
-    padding: 0;
-    -webkit-animation: text-focus-in 1.5s 1.5s both;
-    	      animation: text-focus-in 1.5s 1.5s both;
+    width: 600px;
   }
+}
 
-  span.fbBlue a:link {color: #4267B2;}
-  span.fbBlue a:visited {color: #4267B2;}
-
-  span.ocGray a:link {color: #8E8F90;}
-  span.ocGray a:visited {color: #8E8F90;}
-
-  span.medPink a:link {color: #FF2E92;}
-  span.medPink a:visited {color: #FF2E92;}
-
-  span.gifnBlue a:link {color: #4BAFE7;}
-  span.gifnBlue a:visited {color: #4BAFE7;}
-
-  span.brandGreen a:link {color: #00B0AA;}
-  span.brandGreen a:visited {color: #00B0AA;}
-
-  span.thrillRed a:link {color: #C30000;}
-  span.thrillRed a:visited {color: #C30000;}
-
-  span.jackOrange a:link {color: #EF3A23;}
-  span.jackOrange a:visited {color: #EF3A23;}
-
-  span.prplGreen a:link {color: #27F5C8;}
-  span.prplGreen a:visited {color: #27F5C8;}
-
-  span.groupBlue a:link {color: #00DFE4;}
-  span.groupBlue a:visited {color: #00DFE4;}
-
-  span.social a:link {color: #E4AD36;}
-  span.social a:visited {color: #E4AD36;}
+@media (min-width: 1000px) {
+  body {
+    margin: 80px auto;
+    width: 840px;
+  }
+  .content{
+    flex-direction: row;
+    margin: 40px 0 0 0;
+  }
+  .name {
+    margin: 0 80px 0 0;
+    padding: 0;
+    width: auto;
+  }
+  .footer {
+    text-align: right;
+  }
 }
