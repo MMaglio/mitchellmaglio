@@ -8,30 +8,30 @@
 }
 
 @-webkit-keyframes intro-2 {
-  0% {transform: translateX(-10px) translateY(-10px) scale(.2);}
-  100% {transform: translateX(0px) translateY(0px) scale(1);}
+  0% {transform: translateX(-10px) translateY(-10px) scale(.2) rotateZ(30deg);}
+  100% {transform: translateX(0px) translateY(0px) scale(1) rotateZ(0deg);}
 }
 @keyframes intro-2 {
-  0% {transform: translateX(-10px) translateY(-10px) scale(.2);}
-  100% {transform: translateX(0px) translateY(0px) scale(1);}
+  0% {transform: translateX(-10px) translateY(-10px) scale(.2) rotateZ(30deg);}
+  100% {transform: translateX(0px) translateY(0px) scale(1) rotateZ(0deg);}
 }
 
 @-webkit-keyframes intro-3 {
-  0% {transform: translateX(-40px) translateY(50px) scale(.4);}
-  100% {transform: translateX(0px) translateY(0px) scale(1);}
+  0% {transform: translateX(-40px) translateY(50px) scale(.4) rotateZ(-20deg);}
+  100% {transform: translateX(0px) translateY(0px) scale(1) rotateZ(0deg);}
 }
 @keyframes intro-3 {
-  0% {transform: translateX(-40px) translateY(50px) scale(.4);}
-  100% {transform: translateX(0px) translateY(0px) scale(1);}
+  0% {transform: translateX(-40px) translateY(50px) scale(.4) rotateZ(-20deg);}
+  100% {transform: translateX(0px) translateY(0px) scale(1) rotateZ(0deg);}
 }
 
 @-webkit-keyframes intro-4 {
-  0% {transform: translateX(80px) translateY(20px) scale(.8);}
-  100% {transform: translateX(0px) translateY(0px) scale(1);}
+  0% {transform: translateX(80px) translateY(20px) scale(.8) rotateZ(15deg);}
+  100% {transform: translateX(0px) translateY(0px) scale(1) rotateZ(0deg);}
 }
 @keyframes intro-4 {
-  0% {transform: translateX(80px) translateY(20px) scale(.8);}
-  100% {transform: translateX(0px) translateY(0px) scale(1);}
+  0% {transform: translateX(80px) translateY(20px) scale(.8) rotateZ(15deg);}
+  100% {transform: translateX(0px) translateY(0px) scale(1) rotateZ(0deg);}
 }
 
 @-webkit-keyframes explode-1 {
@@ -44,30 +44,30 @@
 }
 
 @-webkit-keyframes explode-2 {
-  from {transform: translateX(0px) translateY(0px) scale(1);}
-  to {transform: translateX(-10px) translateY(-10px) scale(.2);}
+  from {transform: translateX(0px) translateY(0px) scale(1) rotateZ(0deg);}
+  to {transform: translateX(-10px) translateY(-10px) scale(.2) rotateZ(30deg);}
 }
 @keyframes explode-2 {
-  from {transform: translateX(0px) translateY(0px) scale(1);}
-  to {transform: translateX(-10px) translateY(-10px) scale(.2);}
+  from {transform: translateX(0px) translateY(0px) scale(1) rotateZ(0deg);}
+  to {transform: translateX(-10px) translateY(-10px) scale(.2) rotateZ(30deg);}
 }
 
 @-webkit-keyframes explode-3 {
-  from {transform: translateX(0px) translateY(0px) scale(1);}
-  to {transform: translateX(-40px) translateY(50px) scale(.4);}
+  from {transform: translateX(0px) translateY(0px) scale(1) rotateZ(0deg);}
+  to {transform: translateX(-40px) translateY(50px) scale(.4) rotateZ(-20deg);}
 }
 @keyframes explode-3 {
-  from {transform: translateX(0px) translateY(0px) scale(1);}
-  to {transform: translateX(-40px) translateY(50px) scale(.4);}
+  from {transform: translateX(0px) translateY(0px) scale(1) rotateZ(0deg);}
+  to {transform: translateX(-40px) translateY(50px) scale(.4) rotateZ(-20deg);}
 }
 
 @-webkit-keyframes explode-4 {
-  from {transform: translateX(0px) translateY(0px) scale(1);}
-  to {transform: translateX(80px) translateY(20px) scale(.8);}
+  from {transform: translateX(0px) translateY(0px) scale(1) rotateZ(0deg);}
+  to {transform: translateX(80px) translateY(20px) scale(.8) rotateZ(15deg);}
 }
 @keyframes explode-4 {
-  from {transform: translateX(0px) translateY(0px) scale(1);}
-  to {transform: translateX(80px) translateY(20px) scale(.8);}
+  from {transform: translateX(0px) translateY(0px) scale(1) rotateZ(0deg);}
+  to {transform: translateX(80px) translateY(20px) scale(.8) rotateZ(15deg);}
 }
 
 @-webkit-keyframes text-focus-in {
