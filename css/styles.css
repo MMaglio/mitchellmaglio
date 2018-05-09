@@ -242,6 +242,8 @@ body {
   	      animation: text-focus-in 1.5s 1s both;
 }
 .text {
+  display: flex;
+  flex-direction: column;
   width: auto;
   padding: 0;
   margin: 0;
@@ -249,9 +251,13 @@ body {
   	      animation: text-focus-in 1.5s 1.5s both;
 }
 
+.current, .previous, .know, .more {
+  margin: 0 0 40px 0;
+}
+
 .footer {
   width: 100%;
-  margin: 160px 0 0 0;
+  margin: 120px 0 0 0;
   text-align: left;
   -webkit-animation: text-focus-in 1.5s 2.0s both;
   	      animation: text-focus-in 1.5s 2.0s both;
