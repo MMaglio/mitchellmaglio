@@ -114,22 +114,22 @@
 	        animation: intro-4 .3s cubic-bezier(.87,-.41,.19,1.44) .5s both;
 }
 
-.logo:hover #logoCircle, .logo:active #logoCircle {
+.logo:hover #logoCircle {
   -webkit-animation: explode-1 .2s cubic-bezier(.87,-.41,.19,1.44) both;
 	        animation: explode-1 .2s cubic-bezier(.87,-.41,.19,1.44) both;
 }
 
-.logo:hover #logoLine1, .logo:active #logoLine1 {
+.logo:hover #logoLine1 {
   -webkit-animation: explode-2 .2s cubic-bezier(.87,-.41,.19,1.44) both;
 	        animation: explode-2 .2s cubic-bezier(.87,-.41,.19,1.44) both;
 }
 
-.logo:hover #logoLine2, .logo:active #logoLine2 {
+.logo:hover #logoLine2 {
   -webkit-animation: explode-3 .2s cubic-bezier(.87,-.41,.19,1.44) both;
 	        animation: explode-3 .2s cubic-bezier(.87,-.41,.19,1.44) both;
 }
 
-.logo:hover #logoLine3, .logo:active #logoLine3 {
+.logo:hover #logoLine3 {
   -webkit-animation: explode-4 .2s cubic-bezier(.87,-.41,.19,1.44) both;
 	        animation: explode-4 .2s cubic-bezier(.87,-.41,.19,1.44) both;
 }
