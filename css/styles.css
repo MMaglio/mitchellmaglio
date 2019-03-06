@@ -154,7 +154,7 @@ h2 {
 
 a {
   font-weight: bold;
-  text-decoration: underline;
+  text-decoration: none;
   -o-transition:.7s;
   -ms-transition:.7s;
   -moz-transition:.7s;
