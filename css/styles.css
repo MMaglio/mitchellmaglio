@@ -135,25 +135,27 @@
 }
 
 h1 {
-  font-family: 'Overpass Mono', monospace;
-  font-weight: lighter;
-  font-size: 14px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
   line-height: 28px;
   color: #000000;
   margin: 0;
+  letter-spacing: .8px;
 }
 
 h2 {
-  font-family: 'Overpass Mono', monospace;
-  font-weight: lighter;
-  font-size: 12px;
-  line-height: 16px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
   color: #999999;
   margin: 0;
+  letter-spacing: .8px;
 }
 
 a {
-  font-weight: bold;
+  font-weight: 500;
   text-decoration: none;
   -o-transition:.7s;
   -ms-transition:.7s;
@@ -162,9 +164,14 @@ a {
   transition:.7s;
 }
 
-span.goldColor {color: #E4AD36;}
-
-span.lightColor {color: #999999;}
+span.orangeColor {color: #FA7268;}
+span.lightColor {color: #CCCCCC;}
+span.grayColor {
+  color: #999999;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
 
 span.fbBlue a:link {color: #000000;}
 span.fbBlue a:visited {color: #000000;}
@@ -204,96 +211,107 @@ span.groupBlue a:hover {color: #00DFE4;}
 
 span.social a:link {color: #000000;}
 span.social a:visited {color: #000000;}
-span.social a:hover {color: #E4AD36;}
+span.social a:hover {color: #FA7268;}
 
 html {
-  background-color: #ffffff;
+  background-color: #FCFCFC;
   padding: 0;
   margin: 0;
 }
 
 body {
+  width: 100%;
   height: 100%;
   padding: 0;
-  margin: 40px;
+  margin: 0;
 }
 
 .header {
   width: 100%
 }
 
-.logo {
+.content{
+  width: auto;
   padding: 0;
   margin: 0;
+}
+
+.logo {
+  margin: 40px 0 20px 40px;
+  padding: 0;
   width: 116px;
 }
-.content{
-  display: flex;
-  flex-direction: column;
-  width: auto;
-  padding: 0;
-  margin: 0;
-}
+
 .name {
-  margin: 40px 0;
-  padding: 0;
-  width: auto;
-  -webkit-animation: text-focus-in 1.5s 1s both;
-  	      animation: text-focus-in 1.5s 1s both;
-}
-.text {
-  display: flex;
-  flex-direction: column;
-  width: auto;
-  padding: 0;
-  margin: 0;
-  -webkit-animation: text-focus-in 1.5s 1.5s both;
-  	      animation: text-focus-in 1.5s 1.5s both;
+  padding: 0 0 0 40px;
+  margin: 0 0 40px 0;
+  line-height: 24px;
+  font-weight: 500;
+  -webkit-animation: text-focus-in 1.5s 1.0s both;
+          animation: text-focus-in 1.5s 1.0s both;
 }
 
 .current, .previous, .know, .more {
-  margin: 0 0 40px 0;
+  margin: 0 0 20px 0;
+  padding: 40px;
+  background-color: #FFFFFF;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.10);
+}
+
+.current {
+  -webkit-animation: text-focus-in 1.5s 1.25s both;
+          animation: text-focus-in 1.5s 1.25s both;
+}
+
+.previous {
+  -webkit-animation: text-focus-in 1.5s 1.5s both;
+          animation: text-focus-in 1.5s 1.5s both;
+}
+
+.know {
+  -webkit-animation: text-focus-in 1.5s 1.75s both;
+          animation: text-focus-in 1.5s 1.75s both;
+}
+
+.more {
+  -webkit-animation: text-focus-in 1.5s 2.0s both;
+          animation: text-focus-in 1.5s 2.0s both;
+}
+
+.disclaimer {
+  padding: 0 40px;
+  text-align: left;
+  -webkit-animation: text-focus-in 1.5s 2.25s both;
+          animation: text-focus-in 1.5s 2.25s both;
 }
 
 .footer {
-  width: 100%;
-  margin: 120px 0 0 0;
-  text-align: left;
-  -webkit-animation: text-focus-in 1.5s 2.0s both;
-  	      animation: text-focus-in 1.5s 2.0s both;
+  margin: 80px 0 0 0;
+  padding: 0;
+  opacity: .5;
+  text-align: center;
+  -webkit-animation: text-focus-in 1.5s 2.5s both;
+          animation: text-focus-in 1.5s 2.5s both;
 }
 
-@media (min-width: 550px) {
+@media (min-width: 320px) {
   body {
-    margin: 80px;
+    margin: 80px auto 40px auto;
+    width: 80%;
   }
 }
 
 @media (min-width: 768px) {
   body {
-    margin: 80px auto;
-    width: 600px;
-  }
-  .text {
+    margin: 80px auto 40px auto;
     width: 600px;
   }
 }
 
 @media (min-width: 1000px) {
   body {
-    margin: 80px auto;
-    width: 840px;
-  }
-  .content{
-    flex-direction: row;
-    margin: 40px 0 0 0;
-  }
-  .name {
-    margin: 0 80px 0 0;
-    padding: 0;
-    width: auto;
-  }
-  .footer {
-    text-align: right;
+    margin: 80px auto 40px auto;
+    width: 600px;
   }
 }
