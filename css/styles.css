@@ -173,6 +173,10 @@ span.grayColor {
   letter-spacing: 2px;
 }
 
+span.epicBlue a:link {color: #000000;}
+span.epicBlue a:visited {color: #000000;}
+span.epicBlue a:hover {color: #3376EA;}
+
 span.fbBlue a:link {color: #000000;}
 span.fbBlue a:visited {color: #000000;}
 span.fbBlue a:hover {color: #4267B2;}
